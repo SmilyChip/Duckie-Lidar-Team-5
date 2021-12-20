@@ -63,11 +63,9 @@ def Funcion2_0(n,dTotal):
     for i in kks:
         mover(v,dt) #mueve el robot en línea recta
         if robot.get_rotation()<3.1 and robot.get_rotation()>0: #corrige el ángulo después de avanzar si este es menor a pi  
-            print(robot.get_rotation())
             rot= 3.14-robot.get_rotation()
             girar(rot+0.5)
         if robot.get_rotation()>-3.1 and robot.get_rotation()<0: #corrige el ángulo después de avanzar si este es mayor a -pi
-            print(robot.get_rotation())
             rot= 3.14+robot.get_rotation()
             girar(-rot-0.5)
         mover(0,1)     
